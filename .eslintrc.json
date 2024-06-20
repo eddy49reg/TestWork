@@ -3,6 +3,7 @@
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",
+    "project": "tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     }
@@ -28,7 +29,7 @@
     "es2021": true,
     "node": true
   },
-  "ignorePatterns": ["node_modules/", ".build/"],
+  "ignorePatterns": ["node_modules/", ".build/", "commitlint.config.js"],
   "rules": {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",

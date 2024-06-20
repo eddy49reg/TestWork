@@ -18,9 +18,23 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "incremental": true,
+    "downlevelIteration": true,
+    "allowUnreachableCode": false,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "jsxImportSource": "@emotion/react"
   },
   "include": [
-    "src"
+    "**/*.ts",
+    "**/*.tsx",
+    "commitlint.config.js"
+  ],
+  "exclude": [
+    "node_modules",
   ]
 }
