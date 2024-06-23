@@ -32,6 +32,8 @@
   "ignorePatterns": ["node_modules/", ".build/", "commitlint.config.js"],
   "rules": {
     "react/jsx-uses-react": "off",
+    "import/prefer-default-export": "off",
+    "no-param-reassign": ["error", { "props": false }],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
