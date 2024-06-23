@@ -10,7 +10,7 @@ export const sellCardsEndpoints = api.injectEndpoints({
                 method: "GET",
             }),
             providesTags: result =>
-                result
+                result && result.data
                     ? [
                           ...result.data.map(({ id }) => ({
                               type: TAG_TYPE.SELL_CARDS,
